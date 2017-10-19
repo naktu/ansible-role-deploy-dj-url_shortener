@@ -5,4 +5,4 @@
 - name: copy configure
   template:
     src: django_config.j2
-    dest: {{ dj_project_dest }}/{{ project_name }}/settings.py
+    dest: "{{ dj_project_dest }}/{{ project_name }}/settings.py"
