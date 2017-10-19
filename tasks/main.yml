@@ -1,0 +1,8 @@
+---
+- name: deploy project from git
+  git: repo={{ repo_name }} dest={{ dj_project_dest }}
+
+- name: copy configure
+  template:
+    src: django_config.j2
+    dest: {{ dj_project_dest }}/{{ project_name }}/settings.py
