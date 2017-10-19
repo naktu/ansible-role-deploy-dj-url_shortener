@@ -1,3 +1,3 @@
 ### Deploy dj url_shortener
 
-Role for deploying url_shortener (https://github.com/naktu/edu_url_shortener) with local postgresql
+Role for deploying url_shortener (https://github.com/naktu/url_shortener.git) with local postgresql
