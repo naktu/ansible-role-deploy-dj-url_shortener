@@ -22,7 +22,7 @@ SECRET_KEY = 'a(d-ru_&!mcaa^lu@r94f-y_6^n52&8%tb+6pbko3mx--12x4g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = {{ debug }}
 
-ALLOWED_HOSTS = [{{ allowed_hosts }}]
+ALLOWED_HOSTS = ['{{ allowed_hosts }}']
 
 
 # Application definition
@@ -74,9 +74,9 @@ WSGI_APPLICATION = 'url_shortener.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': {{ db_name }},
-        'USER': {{ db_user_name }},
-        'PASSWORD': {{ db_user_password }},
+        'NAME': '{{ db_name }}',
+        'USER': '{{ db_user_name }}',
+        'PASSWORD': '{{ db_user_password }}',
         'HOST': '',
         'PORT': ''
     }
